@@ -4,6 +4,7 @@ import mimetypes
 import urllib
 
 from pathlib import Path
+from tqdm import tqdm
 
 def is_image(path : Path) -> bool:
     if path and path.is_file():
